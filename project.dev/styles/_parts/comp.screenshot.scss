@@ -1,0 +1,19 @@
+.content-splash {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.slice-splash {
+    display: block;
+    min-width: 100px;
+    min-height: 100px;
+    position: absolute;
+    background-color: rgba(white, 0.2);
+    background-repeat: no-repeat;
+    background-size: initial;
+}

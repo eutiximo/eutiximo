@@ -1,0 +1,39 @@
+{
+  "name": "eutiximo",
+  "version": "1.0.0",
+  "description": "Is a website for buy a web project",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "html2canvas": "^1.0.0-rc.3",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "scripts": {
+    "build:dist": "rm -rf project.dist/ && webpack --config ./webpack/webpack.dist-config.js --mode=production",
+    "build:dev": "rm -rf project.dist/ && webpack --config ./webpack/webpack.dev-config.js --mode=development",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev-config.js --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eutiximo systems",
+  "license": "ISC"
+}

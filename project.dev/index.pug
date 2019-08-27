@@ -1,0 +1,17 @@
+extends pug-parts/_base.pug
+
+block head
+    -var titleDoc = 'Inicio';
+
+block content
+    include pug-parts/index.section-home.pug
+
+    include pug-parts/index.section-aboutus.pug
+
+    section.sec#services(fit-container)
+        div.container
+            h1 Servicios
+
+    section.sec#contact(fit-container)
+        div.container
+            h1 Contacto
